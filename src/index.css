@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Amiri', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fef8;
+
+}
+h1 {
+  font-size: 50px;
+}
+a {
+  color: #527723;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+p, label {
+  color: #5a5a5a;
+}
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+button:focus-visible {
+  outline: none;
+  border: 0;
+}
+hr {
+  border-bottom: none;
+  border-top: 1px solid #53772380;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

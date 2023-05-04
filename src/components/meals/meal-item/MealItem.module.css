@@ -1,0 +1,86 @@
+.mealListItem {
+  width: calc(33.33% - 60px);
+  /* max-width: 280px; */
+  /* display: inline-block; */
+  position: relative;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 30px 20px;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 0 24px -4px #52772340;
+  transition: all 0.4s ease;
+}
+.mealListItem img {
+  width: 100%;
+  max-width: 200px;
+  height: 127px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+.mealListItem p {
+  color: #5a5a5a;
+  font-size: 13px;
+}
+.mealListItem h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.mealListItem .itemPrice {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3c3c3c;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.mealListItem .itemPrice > span {
+  font-size: 13px;
+  position: absolute;
+  top: 0;
+  margin: auto auto auto -10px;
+  height: fit-content;
+  bottom: 0;
+}
+.mealListItem::after {
+  content: "";
+  position: absolute;
+  top: -69px;
+  left: 0;
+  width: 102%;
+  max-height: 64%;
+  height: 100%;
+  background-color: #527723;
+  z-index: -2;
+  transform: skewY(17deg);
+  border-radius: 10px 10px 0 0;
+  transition: all 0.4s ease;
+}
+.mealListItem::before {
+  content: "";
+  position: absolute;
+  top: 27%;
+  left: 0;
+  width: 100%;
+  max-height: 40%;
+  border-radius: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+  transform: rotateZ(17deg) scaleX(1.6);
+  transition: all 0.4s ease;
+}
+.mealListItem:hover::before {
+  top: 23%;
+  transform: rotateZ(17deg) scaleX(1.4);
+}
+.mealListItem:hover::after {
+  max-height: 55%;
+}
+.mealListItem:hover img {
+  transform: rotateZ(3deg) scale(1.1);
+}

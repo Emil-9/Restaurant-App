@@ -1,0 +1,16 @@
+.add-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #527723;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5px;
+}

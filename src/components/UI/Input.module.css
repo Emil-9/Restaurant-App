@@ -1,0 +1,39 @@
+.custom-input {
+  border: 1px solid #53772380;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 100%;
+  background-color: #f8fef8;
+  max-width: 300px;
+}
+.custom-input:focus-visible {
+  outline: none;
+}
+.inputWrapper {
+  position: relative;
+}
+.custom-label {
+  font-size: 13px;
+  background-color: transparent;
+  z-index: 2;
+  height: fit-content;
+  width: fit-content;
+  padding: 0 3px;
+  border-radius: 5px;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  transform: translateY(0);
+  transition: transform 0.2s, background-color 0.2s linear;
+}
+.custom-label.focused {
+  transform: translateY(-107%);
+  background-color: #f8fef8;
+}
+.errorField { 
+  border: 1px solid #ff5d5d;
+  background-color: #ffc5c5;
+} 

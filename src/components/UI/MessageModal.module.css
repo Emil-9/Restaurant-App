@@ -1,0 +1,37 @@
+.message-modal {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  font-size: 13px;
+  border-radius: 12px;
+  background-color: #ff5d5d;
+  padding: 15px 25px;
+  width: fit-content;
+  color: #f6f6f6;
+  transform: translateX(-50vw);
+  z-index: 20;
+  animation: fadeModal 5s;
+  animation-iteration-count: 1;
+  transition: transform 0.4s ease-out;
+}
+.message-modal p {
+  color: #f6f6f6;
+  margin: 0;
+}
+@keyframes fadeModal {
+  0% {
+    transform: translateX(-50vw);
+  }
+  10% {
+    transform: translateX(0vw);
+  }
+  20% {
+    transform: translateX(calc(0vw - 20px));
+  }
+  90% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(-50vw);
+  }
+}

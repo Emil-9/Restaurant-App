@@ -1,0 +1,58 @@
+.add-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #527723;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.add-meal-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meal-form-input {
+  position: relative;
+  border-radius: 5px;
+  padding: 2px 0 3px 10px;
+  border: none;
+  max-width: 18px;
+}
+.meal-form-input:focus-visible {
+  outline: none;
+  border: none;
+}
+.add-meal-form > label {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.meal-form-input::-webkit-inner-spin-button {
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-button {
+  padding: 7px 15px;
+  background-color: #527723;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+.leftContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: auto;
+  column-gap: 10px;
+}
+.fading {
+  /* opacity: 0; */
+  transform: translateX(-50vw);
+  transition: all 0.4s ease;
+  transition-delay: 2s;
+}

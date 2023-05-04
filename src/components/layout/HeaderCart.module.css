@@ -1,0 +1,60 @@
+.cartIcon {
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  padding: 5px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.cartIcon:hover {
+  background-color: #5377232b;
+}
+.cartIcon {
+  z-index: 1;
+}
+.cartCount {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  z-index: 0;
+  background-color: #ff5d5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  transform: rotateZ(0deg);
+  font-size: 14px;
+  transition: all 0.4s ease;
+}
+.animate-btn {
+  animation: animateBTN;
+  animation-duration: 350ms;
+  transition: all 0.3s ease;
+}
+@keyframes animateBTN {
+  0% {
+    transform: rotateZ(0deg) scale(1);
+  }
+  20% {
+    transform: rotateZ(10deg) scale(1.2);
+  }
+  40% {
+    transform: rotateZ(-10deg) scale(1.2);
+  }
+  60% {
+    transform: rotateZ(10deg) scale(1.2);
+  }
+  80% {
+    transform: rotateZ(-10deg) scale(1.2);
+  }
+  100% {
+    transform: rotateZ(0deg) scale(1);
+  }
+}

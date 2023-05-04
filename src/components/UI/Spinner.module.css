@@ -1,0 +1,29 @@
+.spinner {
+  width: 20px;
+  height: 20px;
+  background-color: #f8fef8;
+  border-radius: 50%;
+  border: 4px dotted #444;
+  margin: auto;
+  position: relative;
+  animation: spinn 1.5s infinite;
+  animation-timing-function: linear;
+  transition: all 0.3s ease;
+}
+.spinner::after {
+  width: 33px;
+  height: 40px;
+  background-color: #f8fef8;
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: -10px;
+}
+@keyframes spinn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
